@@ -3,9 +3,110 @@ Colors to use:
 dark blue: #06365f
 light blue: #1c5380
 */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   margin: 0;
+}
+
+.top {
+  width: 100%;
+  height: 300px;
+  background-color: #1c5380; /* For browsers that do not support gradients */
+  background-color: -webkit-linear-gradient(to bottom,#1c5380, #1c5380); /* For Safari 5.1 to 6.0 */
+  background-color: -o-linear-gradient(to bottom, #1c5380, #1c5380); /* For Opera 11.1 to 12.0 */
+  background-color: -moz-linear-gradient(to bottom, #1c5380, #1c5380); /* For Firefox 3.6 to 15 */
+  background-color: linear-gradient(to bottom, #1c5380, #1c5380); /* Standard syntax */
+}
+
+.wrapper {
+  position: absolute;
+  top: 100px;
+  left: 10%;
+  width: 900px;
+}
+
+.phone {
+  display: inline-block;
+  width: 44%;
+}
+
+
+.text {
+  display: inline-block;
+  width: 55%;
+  float: right;
+}
+
+.logos {
+  display:block;
+}
+
+.text main {
+  background-image: url(../img/frame.png);
+  background-repeat: no-repeat;
+  padding: 40px 20px 40px 40px;
+  clear:both;
+}
+
+.instag {
+  float: left;
+}
+
+.button {
+  float: right;
+  border: 0.5px solid #06365f;
+  background-color: #1c5380;
+  height: 8px;
+  padding: 10px 10px 30px 10px;
+  color: white;
+  margin: 15px auto;
+  overflow: hidden;
+  font-size: 13px;
+  line-height: 8px;
+  text-align: center;
+}
+
+.text h2, p{
+  display: block;
+  width: 400px;
+}
+
+section h2, p{
+  top: 350px;
+}
+
+.badge{
+  margin: 0 40px 0 0;
+}
+
+footer{
+  position: absolute;
+  bottom: 50px;
+  /*text-align: center;*/
+  left: calc(50% - 250px);
+}
+
+li{
+  display: inline-block;
+  margin: 0 5px;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+  color: #1c5380;
+}
+
+li:last-child{
+  color: grey;
+}
+
+div.button:hover {
+  cursor:pointer;
 }
